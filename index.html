@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magic Item Card Generator 5e</title>
+    <title>D&D Magic Item Card Generator 5e</title>
     <link rel="stylesheet" href="magicItemCardGen.css" />
   </head>
   <body>
@@ -33,7 +33,7 @@
               <li class="rarity-option">Artifact</li>
               <li class="rarity-option">Unknown rarity</li>
             </ul>
-          </div id="attunement">
+          </div>
         </div>
         <input type="checkbox" id="attunement-input" /><label
           for="attunement-input"
@@ -46,21 +46,33 @@
           id="attunement-desc-input"
         /><br />
         <textarea
-          placeholder="Description"
+          placeholder="Description side 1"
           type="text"
           class="description"
           id="description-input"
         ></textarea>
+        <textarea
+          placeholder="Description side 2"
+          type="text"
+          class="description"
+          id="description-input2"
+        ></textarea>
         <br /><br />
       </div>
-      <div id="output-save-div">
       <div id="output-div">
-        <div id="output">
-          <h4 id="name-output">Name</h4>
-          <div id="rarity-attunement-line">
-            <p id="rarity-attunement-output">Rarity</p>
+        <div class="output-card-border">
+          <div id="output">
+            <h4 id="name-output">Name</h4>
+            <div id="rarity-attunement-line">
+              <p id="rarity-attunement-output">Rarity</p>
+            </div>
+            <pre id="description-output">Description</pre>
           </div>
-          <pre id="description-output">Description</pre>
+        </div>
+        <div class="output-card-border">
+          <div id="output2">
+            <pre id="description-output2">Description</pre>
+          </div>
         </div>
       </div>
     </div>

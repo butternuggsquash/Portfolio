@@ -12,6 +12,8 @@ let rarityAttunementOutput = document.getElementById(
 let attunementCheckbox = document.getElementById("attunement-input");
 let descInput = document.getElementById("description-input");
 let descOutput = document.getElementById("description-output");
+let descInput2 = document.getElementById("description-input2");
+let descOutput2 = document.getElementById("description-output2");
 
 for (option of rarityOptions) {
   option.onclick = function () {
@@ -53,4 +55,8 @@ attunementDescInput.addEventListener("input", () => {
 
 descInput.addEventListener("input", () => {
   descOutput.textContent = descInput.value;
+});
+
+descInput2.addEventListener("input", () => {
+  descOutput2.textContent = descInput2.value;
 });

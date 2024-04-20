@@ -1,187 +1,218 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 *::placeholder {
-    color: rgb(177, 177, 177);
+  color: rgb(177, 177, 177);
 }
 
 body {
-    height: 100vh;
-    background: rgb(38, 38, 38);
+  height: 100vh;
+  background: rgb(38, 38, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #header {
-    text-align: center;
-    color: white;
-    font-size: 15pt;
+  text-align: center;
+  color: white;
+  font-size: 15pt;
 }
 
 #input-output {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-@media screen and (max-width: 600px) {
-    #input-output {
-        display: block;
-    }
-    #output-div {
-        margin: 30px;
-    }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #input {
-    text-align: center;
-    color: white;
-    font-size: 14pt;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  width: 450px;
 }
 
 #name-input {
-    margin: 0px;
+  margin: 0px;
 }
 
 #rarity-select-field {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 0px;;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #rarity-input {
-    padding: 10px;
-    margin: 0px;
+  padding: 10px;
+  margin: 0px;
 }
 
-#rarity-options, #rarity-options ul, #rarity-options li{
-    margin-top: 0px;
+#rarity-options,
+#rarity-options ul,
+#rarity-options li {
+  margin-top: 0px;
 }
 
 #rarity-options {
-    position: absolute;
+  position: absolute;
+  margin-left: 42px;
 }
 
 .one-line {
-    width: 400px;
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: none;
-    outline: none;
-    background: rgb(85, 85, 85);
-    color: black;
-    margin: 5px;
-    font-size: 14pt;
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  background: rgb(85, 85, 85);
+  color: black;
+  margin: 5px;
+  font-size: 14pt;
 }
 
 #rarity-input {
-    width: 400px;
-    height: 40px;
-    border: none;
-    outline: none;
-    background: rgb(85, 85, 85);
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 14pt;
-    cursor: pointer;
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: rgb(85, 85, 85);
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14pt;
+  cursor: pointer;
 }
 
 #rarity-input:hover {
-    background: rgb(116, 116, 116);
+  background: rgb(116, 116, 116);
 }
 
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-#rarity-options li{
-    width: 400px;
-    height: 40px;
-    outline: none;
-    background: rgb(85, 85, 85);
-    color: white;
-    text-align: left;
-    padding: 10px;
-    font-size: 14pt;
-    list-style: none;
-    cursor: pointer;
+#rarity-options li {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  background: rgb(85, 85, 85);
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 14pt;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 #rarity-options li:hover {
-    background: rgb(116, 116, 116);
+  background: rgb(116, 116, 116);
 }
 
 #attunement-input {
-    margin: 15px;
-    text-align: left;
+  margin: 15px;
+  text-align: left;
 }
 
-#description-input {
-    width: 400px;
-    height: 300px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: rgb(85, 85, 85);
-    color: black;
-    font-size: 14pt;
-    margin-top: 5px;
+textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: rgb(85, 85, 85);
+  color: black;
+  font-size: 14pt;
+  margin-top: 5px;
 }
 
 #output-div {
-    display: flex;
-    justify-content: center;
-    background: white;
+  display: flex;
+  justify-content: center;
 }
 
-#output {
-    border: 5px solid tomato;
-    height: 400px;
-    width: 300px;
-    text-align: center;
-    text-wrap: wrap;
-    background: white;
-    margin: 10px;
+.output-card-border {
+  border: 10px solid white;
+  margin: 10px;
+}
+
+#output,
+#output2 {
+  border: 5px solid tomato;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  text-wrap: wrap;
+  background: white;
 }
 
 #cardCanvas {
-    background: white;
-    margin-bottom: 20px;
-    border: 5px solid tomato;
+  background: white;
+  margin-bottom: 20px;
+  border: 5px solid tomato;
 }
 
 #name-output {
-    padding: 0px;
-    margin: 10px;
-    max-height: 38px;
-    overflow: hidden;
+  padding: 0px;
+  margin: 10px;
+  max-height: 38px;
+  overflow: hidden;
 }
 
 #rarity-attunement-output {
-    background: tomato;
-    color: white;
-    font-size: 9pt;
-    padding-top: 5px;
-    margin: 0px;
-    max-height: 35px;
-    min-height: 25px;
-    overflow: hidden;
+  background: tomato;
+  color: white;
+  font-size: 9pt;
+  padding-top: 5px;
+  margin: 0px;
+  max-height: 35px;
+  min-height: 25px;
+  overflow: hidden;
+}
+
+#description-output,
+#description-output2 {
+  text-align: left;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: normal;
+  font-size: 9pt;
+  overflow: hidden;
+  white-space: pre-wrap;
+  max-width: 300px;
 }
 
 #description-output {
-    text-align: left;
-    margin: 0px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 300px;
-    max-height: 305px;
-    word-wrap: normal;
-    font-size: 9pt;
-    overflow: hidden;
-    white-space: pre-wrap;
+  max-height: 305px;
+}
+
+#description-output2 {
+  max-height: 375px;
+}
+
+@media screen and (max-width: 600px) {
+  #input-output {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  #output-div {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #rarity-options {
+    margin-left: -6px;
+  }
 }
