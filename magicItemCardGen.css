@@ -231,7 +231,8 @@ footer a {
   color: white;
 }
 
-footer a:hover, footer a:active {
+footer a:hover,
+footer a:active {
   background-color: white;
   color: rgb(85, 85, 85);
 }
@@ -239,4 +240,8 @@ footer a:hover, footer a:active {
 footer a:visited {
   text-decoration: none;
   color: white;
+}
+
+footer a:visited + footer a:hover, footer a:visited + footer a:active {
+  color: rgb(85, 85, 85);
 }
