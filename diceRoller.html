@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="diceRoller.css" />
+  </head>
+  <body>
+    <div class="revealer">
+      <p>?</p>
+    </div>
+      <div class="instructions">
+        <h2>Dice Roller</h2>
+        <p>
+          Enter a number to equal how many times the dice is rolled. Press "d",
+          then enter the size of the dice. Press "=" to display all rolls, and
+          again to display the total of all rolls. Happy rolling!
+        </p>
+      </div>
+    <div class="stack">
+      <div class="roller">
+        <input type="text" id="display" readonly />
+        <div class="keys">
+          <button class="operator-btn" onclick="clearDisplay()">C</button>
+          <button class="operator-btn" onclick="dBtn()">d</button>
+          <button class="operator-btn" onclick="calculate()">=</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button class="operator-btn" onclick="rollHigh()">HIGH</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button class="operator-btn" onclick="rollLow()">LOW</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="index.html">Home</a>
+      <a href="magicItemCardGen.html">D&D Magic Item Card Generator 5e</a>
+    </footer>
+    <script src="diceRoller.js"></script>
+  </body>
+</html>

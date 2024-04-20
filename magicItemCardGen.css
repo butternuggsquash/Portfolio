@@ -216,3 +216,27 @@ textarea {
     margin-left: -6px;
   }
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgb(85, 85, 85);
+}
+
+footer a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover, footer a:active {
+  background-color: white;
+  color: rgb(85, 85, 85);
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: white;
+}
